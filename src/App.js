@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+//IMPORT
+import Header from './components/include/Header';
+import Footer from './components/include/Footer'; 
+import Home from './components/Home';
+import AdvancedJS from "./components/AdvancedJS";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Bookings from './components/Bookings';
+import FAQ from './components/FAQ';
+//UI
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>  {/* <--- MUST BE HashRouter */}
+      <div style={{ overflowX: "hidden" }}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/advancedjs" element={<AdvancedJS />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/bookings" element={<Bookings />} />
+        </Routes>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
-
 export default App;
