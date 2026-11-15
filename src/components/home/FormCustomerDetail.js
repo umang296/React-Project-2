@@ -85,13 +85,13 @@ function FormCustomerDetail({ passDataToParent, sendCustomerDetails }) {
         <div className="row mt-1">
             <label className="col-12 col-md-12 col-lg-4">First Name *</label>
             <input className="col-12 col-md-12 col-lg-7" type="text" name="firstName"
-                pattern="^[A-Za-z\s-]+$" title="Only letters, spaces and hyphens are allowed"
+                pattern="^[A-Za-z\s\-]+$" title="Only letters, spaces and hyphens are allowed"
                 onChange={handleChange} required/>
         </div>
         <div className="row mt-1">
             <label className="col-12 col-md-12 col-lg-4">Last Name *</label>
             <input className="col-12 col-md-12 col-lg-7" type="text" name="lastName"
-                pattern="^[A-Za-z\s-]+$" title="Only letters, spaces and hyphens are allowed"
+                pattern="^[A-Za-z\s\-]+$" title="Only letters, spaces and hyphens are allowed"
                 onChange={handleChange} required/>
         </div>
         <div className="row mt-1">
@@ -118,7 +118,7 @@ function FormCustomerDetail({ passDataToParent, sendCustomerDetails }) {
         <div className="row mt-1">
             <label className="col-12 col-md-12 col-lg-4">Phone Number *</label>
             <input className="col-12 col-md-12 col-lg-7" type="tel" name="phoneNumber"
-                pattern="^[0-9\s()+-]+$" title="Only numbers, spaces and ( ) + - symbols are allowed"
+                pattern="^[0-9\s\(\)+\-]+$" title="Only numbers, spaces and ( ) + - symbols are allowed"
                 onChange={handleChange} required/>
         </div>
         <div className="row mt-1">

@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 function FAQ() {
     //states, data , function or methods
-    let id = 0; //used to create an unique "key" prop for the fuction "map" 
     const [enteredKeywords , setEnteredKeywords ] = useState("");
 
     // UI rendering
@@ -28,7 +27,7 @@ function FAQ() {
                 ).map(
                     question => {
                         return(
-                            <div>
+                            <div key={question.question}>
                                 <h4>{question.question}</h4>
                                 <p>{question.answer}</p>
                             </div>
@@ -43,4 +42,4 @@ function FAQ() {
 
 }
 
-export default FAQ; 
+export default FAQ;

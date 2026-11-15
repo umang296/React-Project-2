@@ -35,7 +35,7 @@ function Header() {
     return (
         <>
            <header className ='row' style={headerStyle}>
-            <div className = 'col-12 col-lg-8 text-center text-white d- flex justify-content-center align-items-center' 
+            <div className = 'col-12 col-lg-8 text-center text-white d-flex justify-content-center align-items-center' 
                                 style={taglineStyle}>Phone Fix Booking System</div>
             <div className = 'col-12 col-lg-4'>
                 <div className = 'row'>
@@ -44,7 +44,7 @@ function Header() {
                         onMouseEnter={() => setHovered('/')} onMouseLeave={() => setHovered('')}>HOME</Link>
                     <Link to="/advancedjs" className = 'col-12 col-md-6 p-0 m-0 border border-dark text-center text-white'
                         style = {buttonStyle('/advancedjs')}
-                        onMouseEnter={() => setHovered('/advancedjs')} onMouseLeave={() => setHovered('')}>EXTENTION</Link>
+                        onMouseEnter={() => setHovered('/advancedjs')} onMouseLeave={() => setHovered('')}>EXTENSION</Link>
                 </div>
             </div>
            </header>

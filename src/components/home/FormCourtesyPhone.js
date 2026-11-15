@@ -11,7 +11,7 @@ const courtesyList = [
     {id: 7, type: 'charger', name: 'iphone charger', bond: 45},
     {id: 8, type: 'charger', name: 'samsung charger', bond: 30},
     {id: 9, type: 'charger', name: 'nokia charger', bond: 25},
-    {id: 10, type: 'charger', name: 'xiaomi', bond: 25},
+    {id: 10, type: 'charger', name: 'xiaomi charger', bond: 25},
 ];
 
 function FormCourtesyPhone({ passDataToParent, sendCourtesyDetails }) {

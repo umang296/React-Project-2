@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { supabase } from './include/supabaseClient';
+import { supabase } from "./include/supabaseClient";
 
 const BUCKET = "Images";
 const IMAGE_REGEX = /\.(png|jpe?g|gif|webp|svg|bmp|avif)$/i;
